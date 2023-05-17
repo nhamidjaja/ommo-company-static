@@ -925,7 +925,7 @@
 }
 .home-header {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -958,6 +958,7 @@
 }
 .home-content {
   gap: var(--dl-space-space-oneandhalfunits);
+  min-width: 60%;
   flex: 0.5;
   display: flex;
   z-index: 20;
@@ -1055,7 +1056,7 @@
   margin: auto;
   display: flex;
   overflow: hidden;
-  position: absolute;
+  /* position: absolute; */
   transform: rotate(-30deg);
   align-items: center;
   flex-direction: row;
@@ -2982,7 +2983,7 @@
     gap: var(--dl-space-space-unit);
     flex: 0 0 auto;
     padding-top: var(--dl-space-space-unit);
-    padding-bottom: 0px;
+    padding-bottom: var(--dl-space-space-unit);
   }
   .home-title {
     font-size: 50px;
