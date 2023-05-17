@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Finbest</title>
+    <title>OMMO</title>
     <meta name="description" content="Description of the website" />
     <meta property="og:title" content="Finbest" />
     <meta property="og:description" content="Description of the website" />
@@ -84,19 +84,19 @@
                     </a>
                   </div>
                   <div class="navbar-links">
-                    <a href="index.html" class="link"><span>Features</span></a>
-                    <a href="index.html" class="link">
+                    <a href="#features" class="link"><span>Fitur</span></a>
+                    <!-- <a href="index.html" class="link">
                       <span>How it works</span>
-                    </a>
-                    <a href="index.html" class="link"><span>Prices</span></a>
-                    <a href="index.html" class="link"><span>Contact</span></a>
+                    </a> -->
+                    <a href="index.html" class="link"><span>Harga</span></a>
+                    <a href="index.html" class="link"><span>Hubungi</span></a>
                   </div>
                 </div>
                 <div class="navbar-quick-actions">
-                  <a href="index.html" class="link navbar-log-in">Log in</a>
+                  <a href="index.html" class="link navbar-log-in">Login</a>
                   <a href="index.html" class="navbar-navlink1">
                     <div class="navbar-sign-up-btn">
-                      <span class="navbar-sign-up">Sign up</span>
+                      <span class="navbar-sign-up">Daftar</span>
                     </div>
                   </a>
                   <img
@@ -117,7 +117,7 @@
                   <svg
                     id="close-mobile-menu"
                     viewBox="0 0 1024 1024"
-                    class="navbar-icon"
+                    class="navbar-icon close-mobile-menu"
                   >
                     <path
                       d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
@@ -125,8 +125,8 @@
                   </svg>
                 </div>
                 <div class="navbar-links1">
-                  <a href="index.html" class="navbar-navlink2">
-                    <span>Features</span>
+                  <a href="#features" class="navbar-navlink2">
+                    <span>Fitur</span>
                   </a>
                   <a href="index.html" class="navbar-navlink3">
                     <span>How it works</span>
@@ -135,17 +135,17 @@
                     <span>Prices</span>
                   </a>
                   <a href="index.html" class="navbar-navlink5">
-                    <span>Contact</span>
+                    <span>Hubungi</span>
                   </a>
                   <div class="navbar-buttons">
                     <a href="index.html" class="navbar-navlink6">
                       <div class="navbar-btn">
-                        <span class="navbar-text"><span>Log in</span></span>
+                        <span class="navbar-text"><span>Login</span></span>
                       </div>
                     </a>
                     <a href="index.html" class="navbar-navlink7">
                       <div class="navbar-btn1">
-                        <span class="navbar-text1"><span>Sign up</span></span>
+                        <span class="navbar-text1"><span>Daftar</span></span>
                       </div>
                     </a>
                   </div>
@@ -162,7 +162,7 @@
     const mobileMenu = document.querySelector('#mobile-menu');
 
     // Buttons
-    const closeButton = document.querySelector('#close-mobile-menu');
+    const closeButton = document.querySelector('.close-mobile-menu');
     const openButton = document.querySelector('#open-mobile-menu');
 
     if (mobileMenu &amp;&amp; closeButton &amp;&amp; openButton) {
@@ -184,29 +184,28 @@
           <div class="home-hero">
             <div class="home-content">
               <h1 class="home-title">
-                finbest is a clean, easy to use, finance app.
+                OMMO adalah aplikasi piutang yang mudah digunakan.
               </h1>
               <span class="home-caption">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
+                Kelola pembukuan dan penagihan piutang Anda di satu tempat.
               </span>
               <div class="home-hero-buttons">
                 <div class="home-io-btn">
-                  <img
+                  <!-- <img
                     alt="pastedImage"
                     src="public/playground_assets/pastedimage-zmzg.svg"
                     class="home-apple"
-                  />
-                  <span class="home-caption1">Download for iOS</span>
+                  /> -->
+                  <span class="home-caption1">Coba Sekarang</span>
                 </div>
-                <div class="home-android-btn">
+                <!-- <div class="home-android-btn">
                   <img
                     alt="pastedImage"
                     src="public/playground_assets/pastedimage-ld65.svg"
                     class="home-android"
                   />
                   <span class="home-caption2">Download for Android</span>
-                </div>
+                </div> -->
               </div>
             </div>
             <div class="home-images">
@@ -248,7 +247,7 @@
           <div class="home-content01">
             <div class="home-header1">
               <h2 class="home-text">
-                Built specifically for people who want faster transactions
+                Dibuat untuk Bisnis yang mempunyai banyak piutang
               </h2>
             </div>
             <div class="home-video-container">
@@ -260,7 +259,7 @@
                 autoplay=""
                 class="home-video1"
               ></video>
-              <div class="home-heading-container">
+              <!-- <div class="home-heading-container">
                 <div class="home-heading01">
                   <span class="home-text01">
                     Consectetur adipiscing elit, sed do eiusmod tempor
@@ -273,11 +272,11 @@
                 <div class="home-explore">
                   <span class="home-text03">Explore pricing plans -&gt;</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
-        <div class="home-stats">
+        <!-- <div class="home-stats">
           <div class="home-stat">
             <span class="home-caption3">200k</span>
             <span class="home-description">
@@ -296,8 +295,8 @@
               Lorem ipsum dolor sit ametconsectetur adipiscing
             </span>
           </div>
-        </div>
-        <div class="home-sections">
+        </div> -->
+        <div id="features" class="home-sections">
           <div class="home-section">
             <div class="home-image">
               <div class="home-image-highlight">
