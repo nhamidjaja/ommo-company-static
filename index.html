@@ -162,8 +162,10 @@
     const mobileMenu = document.querySelector('#mobile-menu');
 
     // Buttons
-    const closeButton = document.querySelector('.close-mobile-menu');
+    const closeButton = document.querySelector('#close-mobile-menu');
     const openButton = document.querySelector('#open-mobile-menu');
+
+    const navBar = document.querySelector('.navbar-links1');
 
     if (mobileMenu &amp;&amp; closeButton &amp;&amp; openButton) {
       // On openButton click, set the mobileMenu position left to -100vw
@@ -173,6 +175,11 @@
 
       // On closeButton click, set the mobileMenu position to 0vw
       closeButton.addEventListener('click', function () {
+        mobileMenu.style.transform = 'translateX(100%)';
+      });
+
+      // On navBar click, set the mobileMenu position to 0vw
+      navBar.addEventListener('click', function () {
         mobileMenu.style.transform = 'translateX(100%)';
       });
     }
