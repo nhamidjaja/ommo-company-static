@@ -1319,7 +1319,7 @@
 }
 .home-image {
   width: 400px;
-  height: 540px;
+  height: 600px;
   display: flex;
   position: relative;
   align-items: center;
@@ -1385,7 +1385,7 @@
   border-color: rgba(0, 0, 0, 0.3);
 }
 .home-section1 {
-  gap: var(--dl-space-space-sixunits);
+  gap: var(--dl-space-space-fourunits);
   width: 100%;
   display: flex;
   z-index: 10;
@@ -1462,14 +1462,14 @@
 }
 .home-image1 {
   width: 370px;
-  height: 600px;
+  height: 650px;
   display: flex;
   position: relative;
   align-items: center;
   flex-direction: row;
   background-size: cover;
   justify-content: flex-end;
-  background-image: url("public/playground_assets/group%201309.svg");
+  background-image: url("public/playground_assets/ommo-app-mitra-detail.webp");
   background-repeat: no-repeat;
   background-position: center;
 }
