@@ -490,7 +490,7 @@
   border-color: #ade2df;
 }
 .feature-image {
-  height: 32px;
+  height: 64px;
   object-fit: cover;
 }
 .feature-content {
