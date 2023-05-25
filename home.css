@@ -2647,17 +2647,17 @@
 }
 .home-logo-container {
   display: flex;
-  padding: var(--dl-space-space-unit);
+  /* padding: var(--dl-space-space-unit); */
   align-self: center;
   align-items: center;
-  border-radius: var(--dl-radius-radius-radius8);
+  /* border-radius: var(--dl-radius-radius-radius8); */
   margin-bottom: var(--dl-space-space-threeunits);
   flex-direction: column;
-  background-color: #375EE0;
+  /* background-color: #375EE0; */
 }
 .home-logo {
-  width: 25px;
-  height: 24px;
+  width: 64px;
+  height: 64px;
 }
 .home-content07 {
   display: flex;
@@ -3429,12 +3429,12 @@
     padding-bottom: var(--dl-space-space-threeunits);
   }
   .home-logo-container {
-    padding: 12px;
+    /* padding: 12px; */
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
   .home-logo {
-    width: 16px;
-    height: 16px;
+    width: 32px;
+    height: 32px;
   }
   .home-left {
     display: flex;
