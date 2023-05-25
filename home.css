@@ -1725,7 +1725,7 @@
 }
 .home-pricing-plans {
   flex: 1;
-  width: 100%;
+  /* width: 100%; */
   display: grid;
   overflow: hidden;
   align-items: flex-start;
@@ -1795,7 +1795,7 @@
   justify-content: flex-start;
 }
 .home-text23 {
-  font-size: 40px;
+  font-size: 2em;
   font-style: normal;
   font-family: Poppins;
   font-weight: 600;
@@ -1852,7 +1852,7 @@
   padding-right: var(--dl-space-space-twounits);
   flex-direction: column;
   justify-content: space-between;
-  border-right-width: 1px;
+  /* border-right-width: 1px; */
 }
 .home-top1 {
   gap: var(--dl-space-space-oneandhalfunits);
@@ -1890,7 +1890,7 @@
   justify-content: flex-start;
 }
 .home-text27 {
-  font-size: 40px;
+  font-size: 2em;
   font-style: normal;
   font-family: Poppins;
   font-weight: 600;
