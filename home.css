@@ -3,10 +3,18 @@
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   max-width: 300px;
   margin: auto;
+  margin-top: var(--dl-space-space-twounits);
+  margin-bottom: var(--dl-space-space-twounits);
   text-align: center;
   border-color: #DBDBDB;
+  padding-top: var(--dl-space-space-threeunits);
   border-width: 1px;
-  border-radius: var(--dl-radius-radius-radius8);
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 16px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-threeunits);
+  background-color: #ffffff;
+  border-right-width: 1px;
 }
 
 .profile-card-title {
