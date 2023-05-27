@@ -1,73 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8Y7ZMTRWH3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-8Y7ZMTRWH3');
-    </script>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8Y7ZMTRWH3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <title>OMMO - Aplikasi Piutang</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    gtag('config', 'G-8Y7ZMTRWH3');
+  </script>
 
-    <meta name="description" content="Aplikasi Piutang untuk Supplier" />
-    <meta property="og:title" content="OMMO" />
-    <meta property="og:description" content="Aplikasi Piutang untuk Supplier" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
+  <title>OMMO - Aplikasi Piutang</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
+  <meta name="description" content="Aplikasi Piutang untuk Supplier" />
+  <meta property="og:title" content="OMMO" />
+  <meta property="og:description" content="Aplikasi Piutang untuk Supplier" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
 
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <!--This is the head section-->
-    <!-- <style> ... </style> -->
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div>
-      <link href="./home.css" rel="stylesheet" />
-      <script
-        type="text/javascript"
-        src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"
-      ></script>
+    body {
+      margin: 0;
+    }
 
-      <div class="home-container">
-        <div class="home-header">
-          <div class="home-heading">
-            <!-- <div id="notifcation" class="home-notification">
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
+
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    figure,
+    blockquote,
+    figcaption {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      background-color: transparent;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Inter;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      color: var(--dl-color-gray-black);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <!--This is the head section-->
+  <!-- <style> ... </style> -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div>
+    <link href="./home.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"></script>
+
+    <div class="home-container">
+      <div class="home-header">
+        <div class="home-heading">
+          <!-- <div id="notifcation" class="home-notification">
               <a href="index.html">
                 <div
                   class="announcement-announcement announcement-root-class-name"
@@ -83,75 +167,72 @@
                 </div>
               </a>
             </div> -->
-            <nav class="navbar-navbar">
-              <div class="navbar-desktop">
-                  <div class="navbar-main">
-                      <div class="navbar-branding">
-                          <a href="index.html" class="navbar-navlink">
-                              <img alt="OMMO" src="public/playground_assets/pastedimage-cx4wqj.svg"
-                                  class="navbar-finbest" />
-                          </a>
-                      </div>
-                      <div class="navbar-links">
-                          <a href="index.html#features" class="link"><span>Fitur</span></a>
-                          <a href="index.html#pricing" class="link"><span>Harga</span></a>
-                          <a href="about.html" class="link"><span>Tentang Kami</span></a>
-                          <a href="index.html" class="link"><span>Hubungi</span></a>
-                      </div>
-                  </div>
-                  <div class="navbar-quick-actions">
-                      <!-- <a href="index.html" class="link navbar-log-in">Login</a> -->
-                      <a href="registration.html" class="navbar-navlink1">
-                          <div class="navbar-sign-up-btn">
-                              <span class="navbar-sign-up">Daftar</span>
-                          </div>
-                      </a>
-                      <img id="open-mobile-menu" alt="pastedImage"
-                          src="public/playground_assets/pastedimage-8o98.svg" class="navbar-hamburger-menu" />
-                  </div>
+          <nav class="navbar-navbar">
+            <div class="navbar-desktop">
+              <div class="navbar-main">
+                <div class="navbar-branding">
+                  <a href="index.html" class="navbar-navlink">
+                    <img alt="OMMO" src="public/playground_assets/pastedimage-cx4wqj.svg" class="navbar-finbest" />
+                  </a>
+                </div>
+                <div class="navbar-links">
+                  <a href="index.html#features" class="link"><span>Fitur</span></a>
+                  <a href="index.html#pricing" class="link"><span>Harga</span></a>
+                  <a href="about.html" class="link"><span>Tentang Kami</span></a>
+                  <a href="index.html" class="link"><span>Hubungi</span></a>
+                </div>
               </div>
-              <div id="mobile-menu" class="navbar-mobile">
-                  <div class="navbar-top">
-                      <a href="index.html" class="navbar-navlink">
-                          <img alt="OMMO" src="public/playground_assets/pastedimage-cx4wqj.svg"
-                              class="navbar-image" />
-                      </a>
-                      <svg id="close-mobile-menu" viewBox="0 0 1024 1024"
-                          class="navbar-icon close-mobile-menu">
-                          <path
-                              d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
-                          </path>
-                      </svg>
+              <div class="navbar-quick-actions">
+                <!-- <a href="index.html" class="link navbar-log-in">Login</a> -->
+                <a href="registration.html" class="navbar-navlink1">
+                  <div class="navbar-sign-up-btn">
+                    <span class="navbar-sign-up">Daftar</span>
                   </div>
-                  <div class="navbar-links1">
-                      <a href="index.html#features" class="navbar-navlink2">
-                          <span>Fitur</span>
-                      </a>
-                      <a href="index.html#pricing" class="navbar-navlink3">
-                          <span>Harga</span>
-                      </a>
-                      <a href="about.html" class="navbar-navlink4">
-                          <span>Tentang Kami</span>
-                      </a>
-                      <a href="index.html" class="navbar-navlink5">
-                          <span>Hubungi</span>
-                      </a>
-                      <div class="navbar-buttons">
-                          <!-- <a href="index.html" class="navbar-navlink6">
+                </a>
+                <img id="open-mobile-menu" alt="pastedImage" src="public/playground_assets/pastedimage-8o98.svg"
+                  class="navbar-hamburger-menu" />
+              </div>
+            </div>
+            <div id="mobile-menu" class="navbar-mobile">
+              <div class="navbar-top">
+                <a href="index.html" class="navbar-navlink">
+                  <img alt="OMMO" src="public/playground_assets/pastedimage-cx4wqj.svg" class="navbar-image" />
+                </a>
+                <svg id="close-mobile-menu" viewBox="0 0 1024 1024" class="navbar-icon close-mobile-menu">
+                  <path
+                    d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
+                  </path>
+                </svg>
+              </div>
+              <div class="navbar-links1">
+                <a href="index.html#features" class="navbar-navlink2">
+                  <span>Fitur</span>
+                </a>
+                <a href="index.html#pricing" class="navbar-navlink3">
+                  <span>Harga</span>
+                </a>
+                <a href="about.html" class="navbar-navlink4">
+                  <span>Tentang Kami</span>
+                </a>
+                <a href="index.html" class="navbar-navlink5">
+                  <span>Hubungi</span>
+                </a>
+                <div class="navbar-buttons">
+                  <!-- <a href="index.html" class="navbar-navlink6">
             <div class="navbar-btn">
               <span class="navbar-text"><span>Login</span></span>
             </div>
           </a> -->
-                          <a href="registration.html" class="navbar-navlink7">
-                              <div class="navbar-btn1">
-                                  <span class="navbar-text1"><span>Daftar</span></span>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
+                  <a href="registration.html" class="navbar-navlink7">
+                    <div class="navbar-btn1">
+                      <span class="navbar-text1"><span>Daftar</span></span>
+                    </div>
+                  </a>
+                </div>
               </div>
-              <div>
-                  <dangerous-html html=" <script>
+            </div>
+            <div>
+              <dangerous-html html=" <script>
 /*
 Mobile menu - Code Embed
 */
@@ -182,29 +263,28 @@ mobileMenu.style.transform = 'translateX(100%)';
 });
 }
 </script>"></dangerous-html>
-              </div>
+            </div>
           </nav>
-          </div>
-          <div class="home-hero">
-            <div class="home-content">
-              <h1 class="home-title">
-                Aplikasi piutang yang mudah digunakan
-              </h1>
-              <span class="home-caption">
-                Kelola pembukuan dan penagihan piutang Anda di satu tempat
-              </span>
-              <div class="home-hero-buttons">
+        </div>
+        <div class="home-hero">
+          <div class="home-content">
+            <h1 class="home-title">
+              Aplikasi piutang yang mudah digunakan
+            </h1>
+            <span class="home-caption">
+              Kelola pembukuan dan penagihan piutang Anda di satu tempat
+            </span>
+            <div class="home-hero-buttons">
+              <a href="registration.html">
                 <div class="home-io-btn">
-                  <!-- <img
-                    alt="pastedImage"
-                    src="public/playground_assets/pastedimage-zmzg.svg"
+                  <img
+                    src="public/playground_assets/airplane-white.svg"
                     class="home-apple"
-                  /> -->
-                  <a href="registration.html">
-                    <span class="home-caption1">Daftar sekarang</span>
-                  </a>
+                  />
+                  <span class="home-caption1">Daftar sekarang</span>
                 </div>
-                <!-- <div class="home-android-btn">
+              </a>
+              <!-- <div class="home-android-btn">
                   <img
                     alt="pastedImage"
                     src="public/playground_assets/pastedimage-ld65.svg"
@@ -212,60 +292,38 @@ mobileMenu.style.transform = 'translateX(100%)';
                   />
                   <span class="home-caption2">Download for Android</span>
                 </div> -->
-              </div>
             </div>
-            <div class="home-images">
-              <div class="home-column">
-                <img
-                  alt="Customer Details"
-                  src="public/playground_assets/ommo-app-mitra-detail.webp"
-                  class="home-pasted-image"
-                />
-              </div>
-              <div class="home-column1">
-                <img
-                  alt="OMMO App Home"
-                  src="public/playground_assets/ommo-app-home.webp"
-                  class="home-pasted-image1"
-                />
-                <img
-                  alt="List of Due Payments"
-                  src="public/playground_assets/ommo-app-due-list.webp"
-                  class="home-pasted-image2"
-                />
-              </div>
-              <div class="home-column2">
-                <img
-                  alt="pastedImage"
-                  src="public/playground_assets/collectibility-graph.svg"
-                  class="home-pasted-image3"
-                />
-                <img
-                  alt="Reconciled Payment Details"
-                  src="public/playground_assets/ommo-app-payment-transfer-detail.png"
-                  class="home-pasted-image4"
-                />
-              </div>
+          </div>
+          <div class="home-images">
+            <div class="home-column">
+              <img alt="Customer Details" src="public/playground_assets/ommo-app-mitra-detail.webp"
+                class="home-pasted-image" />
+            </div>
+            <div class="home-column1">
+              <img alt="OMMO App Home" src="public/playground_assets/ommo-app-home.webp" class="home-pasted-image1" />
+              <img alt="List of Due Payments" src="public/playground_assets/ommo-app-due-list.webp"
+                class="home-pasted-image2" />
+            </div>
+            <div class="home-column2">
+              <img alt="pastedImage" src="public/playground_assets/collectibility-graph.svg"
+                class="home-pasted-image3" />
+              <img alt="Reconciled Payment Details" src="public/playground_assets/ommo-app-payment-transfer-detail.png"
+                class="home-pasted-image4" />
             </div>
           </div>
         </div>
-        <div class="home-video">
-          <div class="home-content01">
-            <div class="home-header1">
-              <h2 class="home-text">
-                Dibuat untuk Bisnis yang mempunyai banyak piutang
-              </h2>
-            </div>
-            <div class="home-video-container">
-              <video
-                src="https://www.youtube.com/watch?v=MRQ69XeDxVk"
-                loop=""
-                muted=""
-                poster="public/playground_assets/pastedimage-v2-900w.png"
-                autoplay=""
-                class="home-video1"
-              ></video>
-              <!-- <div class="home-heading-container">
+      </div>
+      <div class="home-video">
+        <div class="home-content01">
+          <div class="home-header1">
+            <h2 class="home-text">
+              Dibuat untuk Bisnis yang mempunyai banyak piutang
+            </h2>
+          </div>
+          <div class="home-video-container">
+            <video src="https://www.youtube.com/watch?v=MRQ69XeDxVk" loop="" muted=""
+              poster="public/playground_assets/pastedimage-v2-900w.png" autoplay="" class="home-video1"></video>
+            <!-- <div class="home-heading-container">
                 <div class="home-heading01">
                   <span class="home-text01">
                     Consectetur adipiscing elit, sed do eiusmod tempor
@@ -279,10 +337,10 @@ mobileMenu.style.transform = 'translateX(100%)';
                   <span class="home-text03">Explore pricing plans -&gt;</span>
                 </div>
               </div> -->
-            </div>
           </div>
         </div>
-        <!-- <div class="home-stats">
+      </div>
+      <!-- <div class="home-stats">
           <div class="home-stat">
             <span class="home-caption3">200k</span>
             <span class="home-description">
@@ -302,19 +360,19 @@ mobileMenu.style.transform = 'translateX(100%)';
             </span>
           </div>
         </div> -->
-        <div id="features" class="home-sections">
-          <div class="home-section">
-            <div class="home-image">
-              <div class="home-image-highlight">
-                <span class="home-text04">
-                  <span>pantau penagihan bisnis Anda</span>
-                  <br />
-                </span>
-              </div>
+      <div id="features" class="home-sections">
+        <div class="home-section">
+          <div class="home-image">
+            <div class="home-image-highlight">
+              <span class="home-text04">
+                <span>pantau penagihan bisnis Anda</span>
+                <br />
+              </span>
             </div>
-            <div class="home-content02">
-              <h2 class="home-text07">Fungsi yang didapatkan dengan OMMO</h2>
-              <!-- <div class="highlight-highlight">
+          </div>
+          <div class="home-content02">
+            <h2 class="home-text07">Fungsi yang didapatkan dengan OMMO</h2>
+            <!-- <div class="highlight-highlight">
                 <span class="highlight-text">
                   <span>Lihat customer yang perlu ditagih</span>
                 </span>
@@ -325,7 +383,7 @@ mobileMenu.style.transform = 'translateX(100%)';
                   </span>
                 </span>
               </div> -->
-              <!-- <div class="highlight-highlight">
+            <!-- <div class="highlight-highlight">
                 <span class="highlight-text">
                   <span>Jumlah yang perlu ditagih pada saatnya</span>
                 </span>
@@ -335,65 +393,59 @@ mobileMenu.style.transform = 'translateX(100%)';
                   </span>
                 </span>
               </div> -->
-              <div class="home-content04">
-                <div class="home-points">
-                  <div class="point-point">
-                    <div class="point-check">
-                      <svg viewBox="0 0 1024 1024" class="point-icon">
-                        <path
-                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <span class="point-text">
-                      <span>Jadwal piutang</span>
-                    </span>
+            <div class="home-content04">
+              <div class="home-points">
+                <div class="point-point">
+                  <div class="point-check">
+                    <svg viewBox="0 0 1024 1024" class="point-icon">
+                      <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
+                    </svg>
                   </div>
-                  <div class="point-point">
-                    <div class="point-check">
-                      <svg viewBox="0 0 1024 1024" class="point-icon">
-                        <path
-                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <span class="point-text">
-                      <span>Daftar customer untuk ditagih</span>
-                    </span>
+                  <span class="point-text">
+                    <span>Jadwal piutang</span>
+                  </span>
+                </div>
+                <div class="point-point">
+                  <div class="point-check">
+                    <svg viewBox="0 0 1024 1024" class="point-icon">
+                      <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
+                    </svg>
                   </div>
-                  <div class="point-point">
-                    <div class="point-check">
-                      <svg viewBox="0 0 1024 1024" class="point-icon">
-                        <path
-                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <span class="point-text">
-                      <span>Nominal penagihan</span>
-                    </span>
+                  <span class="point-text">
+                    <span>Daftar customer untuk ditagih</span>
+                  </span>
+                </div>
+                <div class="point-point">
+                  <div class="point-check">
+                    <svg viewBox="0 0 1024 1024" class="point-icon">
+                      <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
+                    </svg>
                   </div>
+                  <span class="point-text">
+                    <span>Nominal penagihan</span>
+                  </span>
                 </div>
               </div>
-              <div class="home-explore1">
-                <a href="index.html#pricing" class="link">
-                  <span>Jelajahi harga -&gt;</span>
-                </a>
-              </div>
+            </div>
+            <div class="home-explore1">
+              <a href="index.html#pricing" class="link">
+                <span>Jelajahi harga -&gt;</span>
+              </a>
             </div>
           </div>
-          <div class="home-section1">
-            <div class="home-content03">
-              <div class="home-heading02">
-                <h2 class="home-text09">Pastikan Anda dibayar dengan tepat waktu</h2>
-                <span class="home-text10">
-                  Hindari kekurangan kas untuk kebutuhan Anda
-                </span>
-                <span class="home-text10">
-                  Ingatkan customer Anda sebelum jatuh tempo menggunakan integrasi WhatsApp
-                </span>
-              </div>
-              <!-- <div class="home-content04">
+        </div>
+        <div class="home-section1">
+          <div class="home-content03">
+            <div class="home-heading02">
+              <h2 class="home-text09">Pastikan Anda dibayar dengan tepat waktu</h2>
+              <span class="home-text10">
+                Hindari kekurangan kas untuk kebutuhan Anda
+              </span>
+              <span class="home-text10">
+                Ingatkan customer Anda sebelum jatuh tempo menggunakan integrasi WhatsApp
+              </span>
+            </div>
+            <!-- <div class="home-content04">
                 <div class="home-points">
                   <div class="point-point">
                     <div class="point-check">
@@ -438,22 +490,22 @@ mobileMenu.style.transform = 'translateX(100%)';
                   </div>
                 </a>
               </div> -->
-            </div>
-            <div class="home-image1"></div>
           </div>
-          <div class="home-section2">
-            <div class="home-image2">
-              <div class="home-image-overlay"></div>
-            </div>
-            <div class="home-content05">
-              <h2 class="home-text11">
-                <span>Kelola proses rekonsiliasi dengan cepat</span>
-                <br />
-              </h2>
-              <span class="home-text10">
-                Pembayaran yang diterima akan secara otomatis direkonsiliasi dengan piutang dari masa sebelumnya
-              </span>
-              <!-- <div class="accordion-accordion">
+          <div class="home-image1"></div>
+        </div>
+        <div class="home-section2">
+          <div class="home-image2">
+            <div class="home-image-overlay"></div>
+          </div>
+          <div class="home-content05">
+            <h2 class="home-text11">
+              <span>Kelola proses rekonsiliasi dengan cepat</span>
+              <br />
+            </h2>
+            <span class="home-text10">
+              Pembayaran yang diterima akan secara otomatis direkonsiliasi dengan piutang dari masa sebelumnya
+            </span>
+            <!-- <div class="accordion-accordion">
                 <div data-role="accordion-container" class="accordion-element">
                   <div class="accordion-details">
                     <span class="accordion-text">
@@ -577,231 +629,211 @@ mobileMenu.style.transform = 'translateX(100%)';
                   ></dangerous-html>
                 </div>
               </div> -->
-            </div>
           </div>
         </div>
-        <div class="home-banner-container">
-          <div class="home-banner">
-            <div class="home-overlay">
-              <span class="home-text14">
-                Tingkatkan proses piutang Anda dengan OMMO
-              </span>
-              <div class="home-book-btn">
-                <span class="home-text15">Kontak Kami</span>
-              </div>
+      </div>
+      <div class="home-banner-container">
+        <div class="home-banner">
+          <div class="home-overlay">
+            <span class="home-text14">
+              Tingkatkan proses piutang Anda dengan OMMO
+            </span>
+            <div class="home-book-btn">
+              <span class="home-text15">Kontak Kami</span>
             </div>
-            <img
-              alt="pastedImage"
-              src="public/playground_assets/pastedimage-ylke.svg"
-              class="home-pasted-image5"
-            />
           </div>
+          <img alt="pastedImage" src="public/playground_assets/pastedimage-ylke.svg" class="home-pasted-image5" />
         </div>
-        <div class="home-features">
-          <div class="home-header2">
-            <div class="home-tag">
-              <span class="home-text16">Fitur</span>
-            </div>
-            <div class="home-heading03">
-              <h2 class="home-text17">Semua yang akan Anda dapatkan</h2>
-              <!-- <span class="home-text18">
+      </div>
+      <div class="home-features">
+        <div class="home-header2">
+          <div class="home-tag">
+            <span class="home-text16">Fitur</span>
+          </div>
+          <div class="home-heading03">
+            <h2 class="home-text17">Semua yang akan Anda dapatkan</h2>
+            <!-- <span class="home-text18">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt.
               </span> -->
+          </div>
+        </div>
+        <div class="home-feature-list">
+          <div class="feature-feature">
+            <img alt="Ledger" src="public/playground_assets/ledger.svg" class="feature-image" />
+            <div class="feature-content">
+              <span class="feature-title"><span>Pembukuan</span></span>
+              <span class="feature-description">
+                <span>
+                  Catat piutang, kontak customer, dan jadwal pembayaran
+                </span>
+              </span>
             </div>
           </div>
-          <div class="home-feature-list">
-            <div class="feature-feature">
-              <img
-                alt="Ledger"
-                src="public/playground_assets/ledger.svg"
-                class="feature-image"
-              />
-              <div class="feature-content">
-                <span class="feature-title"><span>Pembukuan</span></span>
-                <span class="feature-description">
-                  <span>
-                    Catat piutang, kontak customer, dan jadwal pembayaran
-                  </span>
+          <div class="feature-feature">
+            <img alt="image" src="public/playground_assets/schedule.svg" class="feature-image" />
+            <div class="feature-content">
+              <span class="feature-title"><span>Pengingat</span></span>
+              <span class="feature-description">
+                <span>
+                  Beri tahu customer sebelum tanggal jatuh tempo
                 </span>
-              </div>
+              </span>
             </div>
-            <div class="feature-feature">
-              <img
-                alt="image"
-                src="public/playground_assets/schedule.svg"
-                class="feature-image"
-              />
-              <div class="feature-content">
-                <span class="feature-title"><span>Pengingat</span></span>
-                <span class="feature-description">
-                  <span>
-                    Beri tahu customer sebelum tanggal jatuh tempo
-                  </span>
+          </div>
+          <div class="feature-feature">
+            <img alt="image" src="public/playground_assets/reconcile.svg" class="feature-image" />
+            <div class="feature-content">
+              <span class="feature-title"><span>Rekonsiliasi</span></span>
+              <span class="feature-description">
+                <span>
+                  Hubungkan pembayaran dan pelunasan secara otomatis
                 </span>
-              </div>
+              </span>
             </div>
-            <div class="feature-feature">
-              <img
-                alt="image"
-                src="public/playground_assets/reconcile.svg"
-                class="feature-image"
-              />
-              <div class="feature-content">
-                <span class="feature-title"><span>Rekonsiliasi</span></span>
-                <span class="feature-description">
-                  <span>
-                    Hubungkan pembayaran dan pelunasan secara otomatis
-                  </span>
+          </div>
+          <div class="feature-feature">
+            <img alt="image" src="public/playground_assets/graph.svg" class="feature-image" />
+            <div class="feature-content">
+              <span class="feature-title"><span>Laporan</span></span>
+              <span class="feature-description">
+                <span>
+                  Dapatkan data untuk meningkatkan kolektibilitas customer Anda
                 </span>
-              </div>
-            </div>
-            <div class="feature-feature">
-              <img
-                alt="image"
-                src="public/playground_assets/graph.svg"
-                class="feature-image"
-              />
-              <div class="feature-content">
-                <span class="feature-title"><span>Laporan</span></span>
-                <span class="feature-description">
-                  <span>
-                    Dapatkan data untuk meningkatkan kolektibilitas customer Anda
-                  </span>
-                </span>
-              </div>
+              </span>
             </div>
           </div>
         </div>
-        <div id="pricing" class="home-pricing">
-          <div class="home-content06">
-            <div class="home-header3">
-              <div class="home-tag1">
-                <span class="home-text19">Paket harga</span>
-              </div>
-              <div class="home-heading04">
-                <h2 class="home-text20">Tidak ada biaya tambahan.</h2>
-              </div>
+      </div>
+      <div id="pricing" class="home-pricing">
+        <div class="home-content06">
+          <div class="home-header3">
+            <div class="home-tag1">
+              <span class="home-text19">Paket harga</span>
             </div>
-            <div class="home-pricing-plans">
-              <div class="home-plans">
-                <div class="home-plan">
-                  <div class="home-top">
-                    <div class="home-heading05">
-                      <span class="home-text21">Starter</span>
-                      <span class="home-text22">
-                        Untuk bisnis dengan volume piutang kecil.
+            <div class="home-heading04">
+              <h2 class="home-text20">Tidak ada biaya tambahan.</h2>
+            </div>
+          </div>
+          <div class="home-pricing-plans">
+            <div class="home-plans">
+              <div class="home-plan">
+                <div class="home-top">
+                  <div class="home-heading05">
+                    <span class="home-text21">Starter</span>
+                    <span class="home-text22">
+                      Untuk bisnis dengan volume piutang kecil.
+                    </span>
+                  </div>
+                  <div class="home-cost">
+                    <span class="home-text23">Gratis</span>
+                  </div>
+                </div>
+                <div class="home-bottom">
+                  <div class="home-check-list">
+                    <div class="check-check">
+                      <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg> -->
+                      <span class="check-text">
+                        <span>&FilledSmallSquare; 50 piutang per bulan</span>
                       </span>
                     </div>
-                    <div class="home-cost">
-                      <span class="home-text23">Gratis</span>
+                    <div class="check-check">
+                      <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg> -->
+                      <span class="check-text">
+                        <span>&check; Jadwal penagihan</span>
+                      </span>
                     </div>
-                  </div>
-                  <div class="home-bottom">
-                    <div class="home-check-list">
-                      <div class="check-check">
-                        <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
+                    <div class="check-check">
+                      <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
                           <path
                             d="M384 690l452-452 60 60-512 512-238-238 60-60z"
                           ></path>
                         </svg> -->
-                        <span class="check-text">
-                          <span>&FilledSmallSquare; 50 piutang per bulan</span>
-                        </span>
-                      </div>
-                      <div class="check-check">
-                        <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
-                          <path
-                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                          ></path>
-                        </svg> -->
-                        <span class="check-text">
-                          <span>&check; Jadwal penagihan</span>
-                        </span>
-                      </div>
-                      <div class="check-check">
-                        <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
-                          <path
-                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                          ></path>
-                        </svg> -->
-                        <span class="check-text">
-                          <span>&check; Saldo piutang per customer</span>
-                        </span>
-                      </div>
-                      <div class="check-check">
-                        <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
+                      <span class="check-text">
+                        <span>&check; Saldo piutang per customer</span>
+                      </span>
+                    </div>
+                    <div class="check-check">
+                      <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
                           <path
                             d="M384 690l452-452 60 60-512 512-238-238 60-60z"
                           ></path> -->
-                        </svg>
-                        <span class="check-text">
-                          <span>&check; Rekonsiliasi otomatis</span>
-                        </span>
-                      </div>
-
-                    </div>
-                    <div class="home-button">
-                      <span class="home-text24">Berlangganan Starter</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="home-plan1">
-                  <div class="home-top1">
-                    <div class="home-heading06">
-                      <span class="home-text25">Infinit &infin;</span>
-                      <span class="home-text26">
-                        Kelola piutang tanpa batas apapun.
+                      </svg>
+                      <span class="check-text">
+                        <span>&check; Rekonsiliasi otomatis</span>
                       </span>
                     </div>
-                    <div class="home-cost1">
-                      <span class="home-text27">Rp 30.000</span>
-                      <span class="home-text28">/bulan</span>
-                    </div>
+
                   </div>
-                  <div class="home-bottom1">
-                    <div class="home-check-list1">
-                      <div class="check-check">
-                        <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
+                  <div class="home-button">
+                    <span class="home-text24">Berlangganan Starter</span>
+                  </div>
+                </div>
+              </div>
+              <div class="home-plan1">
+                <div class="home-top1">
+                  <div class="home-heading06">
+                    <span class="home-text25">Infinit &infin;</span>
+                    <span class="home-text26">
+                      Kelola piutang tanpa batas apapun.
+                    </span>
+                  </div>
+                  <div class="home-cost1">
+                    <span class="home-text27">Rp 30.000</span>
+                    <span class="home-text28">/bulan</span>
+                  </div>
+                </div>
+                <div class="home-bottom1">
+                  <div class="home-check-list1">
+                    <div class="check-check">
+                      <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
                           <path
                             d="M384 690l452-452 60 60-512 512-238-238 60-60z"
                           ></path>
                         </svg> -->
-                        <span class="check-text">
-                          <span>&check; Tidak ada batas piutang</span>
-                        </span>
-                      </div>
-                      <div class="check-check">
-                        <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
+                      <span class="check-text">
+                        <span>&check; Tidak ada batas piutang</span>
+                      </span>
+                    </div>
+                    <div class="check-check">
+                      <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
                           <path
                             d="M384 690l452-452 60 60-512 512-238-238 60-60z"
                           ></path>
                         </svg> -->
-                        <span class="check-text">
-                          <span>&check; Jadwal penagihan</span>
-                        </span>
-                      </div>
-                      <div class="check-check">
-                        <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
+                      <span class="check-text">
+                        <span>&check; Jadwal penagihan</span>
+                      </span>
+                    </div>
+                    <div class="check-check">
+                      <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
                           <path
                             d="M384 690l452-452 60 60-512 512-238-238 60-60z"
                           ></path>
                         </svg> -->
-                        <span class="check-text">
-                          <span>&check; Saldo piutang per customer</span>
-                        </span>
-                      </div>
-                      <div class="check-check">
-                        <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
+                      <span class="check-text">
+                        <span>&check; Saldo piutang per customer</span>
+                      </span>
+                    </div>
+                    <div class="check-check">
+                      <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
                           <path
                             d="M384 690l452-452 60 60-512 512-238-238 60-60z"
                           ></path>
                         </svg> -->
-                        <span class="check-text">
-                          <span>&check; Rekonsiliasi otomatis</span>
-                        </span>
-                      </div>
-                      <!-- <div class="check-check">
+                      <span class="check-text">
+                        <span>&check; Rekonsiliasi otomatis</span>
+                      </span>
+                    </div>
+                    <!-- <div class="check-check">
                         <svg viewBox="0 0 1024 1024" class="check-icon">
                           <path
                             d="M384 690l452-452 60 60-512 512-238-238 60-60z"
@@ -811,13 +843,13 @@ mobileMenu.style.transform = 'translateX(100%)';
                           <span>Corporis suscipit laboriosam</span>
                         </span>
                       </div> -->
-                    </div>
-                    <div class="home-button1">
-                      <span class="home-text29">Berlangganan Infinit &infin;</span>
-                    </div>
+                  </div>
+                  <div class="home-button1">
+                    <span class="home-text29">Berlangganan Infinit &infin;</span>
                   </div>
                 </div>
-                <!-- <div class="home-plan2">
+              </div>
+              <!-- <div class="home-plan2">
                   <div class="home-top2">
                     <div class="home-heading07">
                       <span class="home-text30">Premium</span>
@@ -888,8 +920,8 @@ mobileMenu.style.transform = 'translateX(100%)';
                     </div>
                   </div>
                 </div> -->
-              </div>
-              <!-- <div class="home-expand">
+            </div>
+            <!-- <div class="home-expand">
                 <div class="home-overlay1">
                   <div class="home-header4">
                     <div class="home-heading08">
@@ -940,63 +972,134 @@ mobileMenu.style.transform = 'translateX(100%)';
                   </div>
                 </div>
               </div> -->
+          </div>
+          <div class="home-plans1">
+            <div class="home-plan3">
+              <div class="home-top3">
+                <div class="home-heading09">
+                  <span class="home-text43">Starter</span>
+                  <span class="home-text44">
+                    Untuk bisnis dengan volume piutang kecil.
+                  </span>
+                </div>
+                <div class="home-cost3">
+                  <span class="home-text45">Gratis</span>
+                </div>
+              </div>
+              <div class="home-bottom3">
+                <div class="home-check-list4">
+                  <div class="check-check">
+                    <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg> -->
+                    <span class="check-text">
+                      <span>&FilledSmallSquare; 50 piutang per bulan</span>
+                    </span>
+                  </div>
+                  <div class="check-check">
+                    <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg> -->
+                    <span class="check-text">
+                      <span>&check; Jadwal penagihan</span>
+                    </span>
+                  </div>
+                  <div class="check-check">
+                    <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg> -->
+                    <span class="check-text">
+                      <span>&check; Saldo piutang per customer</span>
+                    </span>
+                  </div>
+                  <div class="check-check">
+                    <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg> -->
+                    <span class="check-text">
+                      <span>&check; Rekonsiliasi otomatis</span>
+                    </span>
+                  </div>
+                  <!-- <div class="check-check">
+                      <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg>
+                      <span class="check-text">
+                        <span>Corporis suscipit laboriosam</span>
+                      </span>
+                    </div> -->
+                </div>
+                <div class="home-button4">
+                  <span class="home-text46">Berlangganan Starter</span>
+                </div>
+              </div>
             </div>
-            <div class="home-plans1">
-              <div class="home-plan3">
-                <div class="home-top3">
-                  <div class="home-heading09">
-                    <span class="home-text43">Starter</span>
-                    <span class="home-text44">
-                      Untuk bisnis dengan volume piutang kecil.
+            <div class="home-plan4">
+              <div class="home-top4">
+                <div class="home-heading10">
+                  <span class="home-text47">Infinit &infin;</span>
+                  <span class="home-text48">
+                    Kelola piutang tanpa batas apapun.
+                  </span>
+                </div>
+                <div class="home-cost4">
+                  <span class="home-text49">Rp 30.000</span>
+                  <span class="home-text50">/bulan</span>
+                </div>
+              </div>
+              <div class="home-bottom4">
+                <div class="home-check-list5">
+                  <div class="check-check">
+                    <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg> -->
+                    <span class="check-text">
+                      <span>&check; Tidak ada batas piutang</span>
                     </span>
                   </div>
-                  <div class="home-cost3">
-                    <span class="home-text45">Gratis</span>
+                  <div class="check-check">
+                    <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
+                        <path
+                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                        ></path>
+                      </svg> -->
+                    <span class="check-text">
+                      <span>&check; Jadwal penagihan</span>
+                    </span>
                   </div>
-                </div>
-                <div class="home-bottom3">
-                  <div class="home-check-list4">
-                    <div class="check-check">
-                      <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
+                  <div class="check-check">
+                    <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
                         <path
                           d="M384 690l452-452 60 60-512 512-238-238 60-60z"
                         ></path>
                       </svg> -->
-                      <span class="check-text">
-                        <span>&FilledSmallSquare; 50 piutang per bulan</span>
-                      </span>
-                    </div>
-                    <div class="check-check">
-                      <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
+                    <span class="check-text">
+                      <span>&check; Saldo piutang per customer</span>
+                    </span>
+                  </div>
+                  <div class="check-check">
+                    <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
                         <path
                           d="M384 690l452-452 60 60-512 512-238-238 60-60z"
                         ></path>
                       </svg> -->
-                      <span class="check-text">
-                        <span>&check; Jadwal penagihan</span>
-                      </span>
-                    </div>
-                    <div class="check-check">
-                      <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
-                        <path
-                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                        ></path>
-                      </svg> -->
-                      <span class="check-text">
-                        <span>&check; Saldo piutang per customer</span>
-                      </span>
-                    </div>
-                    <div class="check-check">
-                      <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
-                        <path
-                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                        ></path>
-                      </svg> -->
-                      <span class="check-text">
-                        <span>&check; Rekonsiliasi otomatis</span>
-                      </span>
-                    </div>
-                    <!-- <div class="check-check">
+                    <span class="check-text">
+                      <span>&check; Rekonsiliasi otomatis</span>
+                    </span>
+                  </div>
+                  <!-- <div class="check-check">
                       <svg viewBox="0 0 1024 1024" class="check-icon">
                         <path
                           d="M384 690l452-452 60 60-512 512-238-238 60-60z"
@@ -1006,84 +1109,13 @@ mobileMenu.style.transform = 'translateX(100%)';
                         <span>Corporis suscipit laboriosam</span>
                       </span>
                     </div> -->
-                  </div>
-                  <div class="home-button4">
-                    <span class="home-text46">Berlangganan Starter</span>
-                  </div>
+                </div>
+                <div class="home-button5">
+                  <span class="home-text51">Berlangganan Infinit &infin;</span>
                 </div>
               </div>
-              <div class="home-plan4">
-                <div class="home-top4">
-                  <div class="home-heading10">
-                    <span class="home-text47">Infinit &infin;</span>
-                    <span class="home-text48">
-                      Kelola piutang tanpa batas apapun.
-                    </span>
-                  </div>
-                  <div class="home-cost4">
-                    <span class="home-text49">Rp 30.000</span>
-                    <span class="home-text50">/bulan</span>
-                  </div>
-                </div>
-                <div class="home-bottom4">
-                  <div class="home-check-list5">
-                    <div class="check-check">
-                      <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
-                        <path
-                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                        ></path>
-                      </svg> -->
-                      <span class="check-text">
-                        <span>&check; Tidak ada batas piutang</span>
-                      </span>
-                    </div>
-                    <div class="check-check">
-                      <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
-                        <path
-                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                        ></path>
-                      </svg> -->
-                      <span class="check-text">
-                        <span>&check; Jadwal penagihan</span>
-                      </span>
-                    </div>
-                    <div class="check-check">
-                      <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
-                        <path
-                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                        ></path>
-                      </svg> -->
-                      <span class="check-text">
-                        <span>&check; Saldo piutang per customer</span>
-                      </span>
-                    </div>
-                    <div class="check-check">
-                      <!-- <svg viewBox="0 0 1024 1024" class="check-icon">
-                        <path
-                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                        ></path>
-                      </svg> -->
-                      <span class="check-text">
-                        <span>&check; Rekonsiliasi otomatis</span>
-                      </span>
-                    </div>
-                    <!-- <div class="check-check">
-                      <svg viewBox="0 0 1024 1024" class="check-icon">
-                        <path
-                          d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                        ></path>
-                      </svg>
-                      <span class="check-text">
-                        <span>Corporis suscipit laboriosam</span>
-                      </span>
-                    </div> -->
-                  </div>
-                  <div class="home-button5">
-                    <span class="home-text51">Berlangganan Infinit &infin;</span>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="home-plan5">
+            </div>
+            <!-- <div class="home-plan5">
                 <div class="home-top5">
                   <div class="home-heading11">
                     <span class="home-text52">Premium</span>
@@ -1154,7 +1186,7 @@ mobileMenu.style.transform = 'translateX(100%)';
                   </div>
                 </div>
               </div> -->
-              <!-- <div class="home-expand1">
+            <!-- <div class="home-expand1">
                 <div class="home-overlay2">
                   <div class="home-header5">
                     <div class="home-heading12">
@@ -1205,117 +1237,99 @@ mobileMenu.style.transform = 'translateX(100%)';
                   </div>
                 </div>
               </div> -->
-            </div>
-          </div>
-          <div class="home-help">
-            <span class="home-text65">Need any help?</span>
-            <div class="home-explore2">
-              <span class="home-text66">
-                Get in touch with us right away -&gt;
-              </span>
-            </div>
           </div>
         </div>
-        <div class="home-testimonials">
-          <div class="home-logo-container">
-            <img
-              alt="OMMO Logo Icon"
-              src="public/playground_assets/ommo-logo.svg"
-              class="home-logo"
-            />
+        <div class="home-help">
+          <span class="home-text65">Need any help?</span>
+          <div class="home-explore2">
+            <span class="home-text66">
+              Get in touch with us right away -&gt;
+            </span>
           </div>
-          <div class="home-content07">
-            <div id="quotes" class="home-quotes">
-              <div class="quote active-quote">
-                <div class="quote-quote quote-root-class-name">
-                  <div class="quote-quote1">
-                    <span class="quote-quote2">
-                      <span>
-                        “I love lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliquaation ullamco 100%."
-                      </span>
+        </div>
+      </div>
+      <div class="home-testimonials">
+        <div class="home-logo-container">
+          <img alt="OMMO Logo Icon" src="public/playground_assets/ommo-logo.svg" class="home-logo" />
+        </div>
+        <div class="home-content07">
+          <div id="quotes" class="home-quotes">
+            <div class="quote active-quote">
+              <div class="quote-quote quote-root-class-name">
+                <div class="quote-quote1">
+                  <span class="quote-quote2">
+                    <span>
+                      “I love lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliquaation ullamco 100%."
                     </span>
-                  </div>
-                  <div class="quote-people">
-                    <div class="quote-person">
-                      <img
-                        alt="person-avatar"
-                        src="public/playground_assets/pastedimage-8jmb-200w.png"
-                        class="quote-avatar"
-                      />
-                      <div class="quote-person-details">
-                        <span class="quote-text"><span>Andy Smith</span></span>
-                        <span><span>Manager @Vista Social</span></span>
-                      </div>
-                    </div>
-                  </div>
+                  </span>
                 </div>
-              </div>
-              <div class="quote">
-                <div class="quote-quote quote-root-class-name">
-                  <div class="quote-quote1">
-                    <span class="quote-quote2">
-                      <span>"Testing these templates is a pleasure."</span>
-                    </span>
-                  </div>
-                  <div class="quote-people">
-                    <div class="quote-person">
-                      <img
-                        alt="person-avatar"
-                        src="public/playground_assets/pastedimage-8jmb-200w.png"
-                        class="quote-avatar"
-                      />
-                      <div class="quote-person-details">
-                        <span class="quote-text"><span>Author 2</span></span>
-                        <span><span>Developer @ Vista La Vista</span></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="quote">
-                <div class="quote-quote quote-root-class-name">
-                  <div class="quote-quote1">
-                    <span class="quote-quote2">
-                      <span>"Wow, awesome works!</span>
-                    </span>
-                  </div>
-                  <div class="quote-people">
-                    <div class="quote-person">
-                      <img
-                        alt="person-avatar"
-                        src="public/playground_assets/pastedimage-8jmb-200w.png"
-                        class="quote-avatar"
-                      />
-                      <div class="quote-person-details">
-                        <span class="quote-text"><span>Andy Smith</span></span>
-                        <span><span>Designer @ OhBoy</span></span>
-                      </div>
+                <div class="quote-people">
+                  <div class="quote-person">
+                    <img alt="person-avatar" src="public/playground_assets/pastedimage-8jmb-200w.png"
+                      class="quote-avatar" />
+                    <div class="quote-person-details">
+                      <span class="quote-text"><span>Andy Smith</span></span>
+                      <span><span>Manager @Vista Social</span></span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="home-buttons">
-              <div id="quote-before" class="home-left">
-                <svg viewBox="0 0 1024 1024" class="home-icon12">
-                  <path
-                    d="M854 470v84h-520l238 240-60 60-342-342 342-342 60 60-238 240h520z"
-                  ></path>
-                </svg>
-              </div>
-              <div id="quote-next" class="home-right">
-                <svg viewBox="0 0 1024 1024" class="home-icon14">
-                  <path
-                    d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
-                  ></path>
-                </svg>
+            <div class="quote">
+              <div class="quote-quote quote-root-class-name">
+                <div class="quote-quote1">
+                  <span class="quote-quote2">
+                    <span>"Testing these templates is a pleasure."</span>
+                  </span>
+                </div>
+                <div class="quote-people">
+                  <div class="quote-person">
+                    <img alt="person-avatar" src="public/playground_assets/pastedimage-8jmb-200w.png"
+                      class="quote-avatar" />
+                    <div class="quote-person-details">
+                      <span class="quote-text"><span>Author 2</span></span>
+                      <span><span>Developer @ Vista La Vista</span></span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div>
-              <dangerous-html
-                html=" <script>
+            <div class="quote">
+              <div class="quote-quote quote-root-class-name">
+                <div class="quote-quote1">
+                  <span class="quote-quote2">
+                    <span>"Wow, awesome works!</span>
+                  </span>
+                </div>
+                <div class="quote-people">
+                  <div class="quote-person">
+                    <img alt="person-avatar" src="public/playground_assets/pastedimage-8jmb-200w.png"
+                      class="quote-avatar" />
+                    <div class="quote-person-details">
+                      <span class="quote-text"><span>Andy Smith</span></span>
+                      <span><span>Designer @ OhBoy</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-buttons">
+            <div id="quote-before" class="home-left">
+              <svg viewBox="0 0 1024 1024" class="home-icon12">
+                <path d="M854 470v84h-520l238 240-60 60-342-342 342-342 60 60-238 240h520z"></path>
+              </svg>
+            </div>
+            <div id="quote-next" class="home-right">
+              <svg viewBox="0 0 1024 1024" class="home-icon14">
+                <path d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"></path>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <dangerous-html html=" <script>
     /* Quote Slider - Code Embed */
 
     let current = 1;
@@ -1343,211 +1357,187 @@ mobileMenu.style.transform = 'translateX(100%)';
         quotes[current - 1].classList.add('active-quote');
       });
     }
-  </script>"
-              ></dangerous-html>
-            </div>
+  </script>"></dangerous-html>
           </div>
-        </div>
-        <div class="home-faq">
-          <div class="home-content08">
-            <div class="home-header6">
-              <div class="home-tag2">
-                <span class="home-text67">
-                  <span>FAQ</span>
-                  <br />
-                </span>
-              </div>
-              <div class="home-heading13">
-                <h2 class="home-text70">Frequently Asked Questions</h2>
-              </div>
-            </div>
-            <div class="home-rows">
-              <div class="home-column3">
-                <div class="Question">
-                  <span class="home-title1">
-                    What is sit amet, consectetur adipiscing elit, sed do?
-                  </span>
-                  <span class="home-description3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt
-                    in culpa qui officia deserunt mollit anim id est laborum.
-                  </span>
-                </div>
-                <div class="Question">
-                  <span class="home-title2">
-                    What is sit amet, consectetur adipiscing elit, sed do?
-                  </span>
-                  <span class="home-description4">
-                    <span>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Excepteur sint occaecat cupidatat non proident,
-                      sunt in culpa qui officia deserunt mollit anim id est
-                      laborum.
-                    </span>
-                    <br />
-                    <span>
-                      tempor incididunt ut labore et dolore magna aliqua.
-                      Excepteur sint occaecat
-                    </span>
-                  </span>
-                </div>
-                <div class="home-question2 Question">
-                  <span class="home-title3">
-                    What is sit amet, consectetur adipiscing elit, sed do?
-                  </span>
-                  <span class="home-description5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
-                  </span>
-                </div>
-              </div>
-              <div class="home-column4">
-                <div class="home-question3 Question">
-                  <span class="home-title4">
-                    What is sit amet, consectetur adipiscing elit, sed do?
-                  </span>
-                  <span class="home-description6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
-                  </span>
-                </div>
-                <div class="home-question4 Question">
-                  <span class="home-title5">
-                    What is sit amet, consectetur adipiscing elit, sed do?
-                  </span>
-                  <span class="home-description7">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
-                  </span>
-                </div>
-                <div class="home-question5 Question">
-                  <span class="home-title6">
-                    What is sit amet, consectetur adipiscing elit, sed do?
-                  </span>
-                  <span class="home-description8">
-                    <span>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Excepteur sint occaecat cupidatat non proident,
-                      sunt in culpa qui officia deserunt mollit anim id est
-                      laborum.
-                    </span>
-                    <br />
-                    <span>
-                      tempor incididunt ut labore et dolore magna aliqua.
-                      Excepteur sint occaecat
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="home-get-started1">
-          <div class="home-content09">
-            <div class="home-heading14">
-              <h2 class="home-text77">Get started with finbest now!</h2>
-              <span class="home-text78">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore magna.
-              </span>
-            </div>
-            <div class="home-hero-buttons1">
-              <div class="home-io-btn1">
-                <img
-                  alt="pastedImage"
-                  src="public/playground_assets/pastedimage-zmzg.svg"
-                  class="home-apple1"
-                />
-                <span class="home-caption6">Download for iOS</span>
-              </div>
-              <div class="home-android-btn1">
-                <img
-                  alt="pastedImage"
-                  src="public/playground_assets/pastedimage-ld65.svg"
-                  class="home-android1"
-                />
-                <span class="home-caption7">Download for Android</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-footer">
-          <div class="footer-content">
-            <div class="footer-information">
-              <div class="footer-heading">
-                <img
-                  alt="pastedImage"
-                  src="public/playground_assets/pastedimage-qqc.svg"
-                  class="footer-pasted-image"
-                />
-                <span class="footer-text">
-                  <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </span>
-                </span>
-              </div>
-              <div class="footer-socials">
-                <div class="social-social social-root-class-name">
-                  <img
-                    alt="pastedImage"
-                    src="public/playground_assets/pastedimage-9nha.svg"
-                    class="social-insider"
-                  />
-                </div>
-                <div class="social-social social-root-class-name1">
-                  <img
-                    alt="pastedImage"
-                    src="public/playground_assets/pastedimage-k0l6.svg"
-                    class="social-insider"
-                  />
-                </div>
-                <div class="social-social social-root-class-name2">
-                  <img
-                    alt="pastedImage"
-                    src="public/playground_assets/pastedimage-ld65.svg"
-                    class="social-insider"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="footer-links">
-              <div class="footer-column">
-                <span class="footer-header"><span>Solutions</span></span>
-                <span class="footer-link">
-                  <span>Responsive Web Design</span>
-                </span>
-                <span class="footer-link01">
-                  <span>Responsive Prototypes</span>
-                </span>
-                <span class="footer-link02"><span>Design to Code</span></span>
-                <span class="footer-link03">
-                  <span>Static Website Builder</span>
-                </span>
-                <span class="footer-link04">
-                  <span>Static Website Generator</span>
-                </span>
-              </div>
-              <div class="footer-column1">
-                <span class="footer-header1"><span>Company</span></span>
-                <span class="footer-link05"><span>About</span></span>
-                <span class="footer-link06"><span>Team</span></span>
-                <span class="footer-link07"><span>News</span></span>
-                <span class="footer-link08"><span>Partners</span></span>
-                <span class="footer-link09"><span>Careers</span></span>
-                <span class="footer-link10">
-                  <span>Press &amp; Media</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <span class="footer-text1">
-            <span>© 2022 finbest. All Rights Reserved.</span>
-          </span>
         </div>
       </div>
+      <div class="home-faq">
+        <div class="home-content08">
+          <div class="home-header6">
+            <div class="home-tag2">
+              <span class="home-text67">
+                <span>FAQ</span>
+                <br />
+              </span>
+            </div>
+            <div class="home-heading13">
+              <h2 class="home-text70">Frequently Asked Questions</h2>
+            </div>
+          </div>
+          <div class="home-rows">
+            <div class="home-column3">
+              <div class="Question">
+                <span class="home-title1">
+                  What is sit amet, consectetur adipiscing elit, sed do?
+                </span>
+                <span class="home-description3">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Excepteur sint occaecat cupidatat non proident, sunt
+                  in culpa qui officia deserunt mollit anim id est laborum.
+                </span>
+              </div>
+              <div class="Question">
+                <span class="home-title2">
+                  What is sit amet, consectetur adipiscing elit, sed do?
+                </span>
+                <span class="home-description4">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est
+                    laborum.
+                  </span>
+                  <br />
+                  <span>
+                    tempor incididunt ut labore et dolore magna aliqua.
+                    Excepteur sint occaecat
+                  </span>
+                </span>
+              </div>
+              <div class="home-question2 Question">
+                <span class="home-title3">
+                  What is sit amet, consectetur adipiscing elit, sed do?
+                </span>
+                <span class="home-description5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna.
+                </span>
+              </div>
+            </div>
+            <div class="home-column4">
+              <div class="home-question3 Question">
+                <span class="home-title4">
+                  What is sit amet, consectetur adipiscing elit, sed do?
+                </span>
+                <span class="home-description6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna.
+                </span>
+              </div>
+              <div class="home-question4 Question">
+                <span class="home-title5">
+                  What is sit amet, consectetur adipiscing elit, sed do?
+                </span>
+                <span class="home-description7">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna.
+                </span>
+              </div>
+              <div class="home-question5 Question">
+                <span class="home-title6">
+                  What is sit amet, consectetur adipiscing elit, sed do?
+                </span>
+                <span class="home-description8">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est
+                    laborum.
+                  </span>
+                  <br />
+                  <span>
+                    tempor incididunt ut labore et dolore magna aliqua.
+                    Excepteur sint occaecat
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-get-started1">
+        <div class="home-content09">
+          <div class="home-heading14">
+            <h2 class="home-text77">Get started with finbest now!</h2>
+            <span class="home-text78">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore magna.
+            </span>
+          </div>
+          <div class="home-hero-buttons1">
+            <div class="home-io-btn1">
+              <img alt="pastedImage" src="public/playground_assets/pastedimage-zmzg.svg" class="home-apple1" />
+              <span class="home-caption6">Download for iOS</span>
+            </div>
+            <div class="home-android-btn1">
+              <img alt="pastedImage" src="public/playground_assets/pastedimage-ld65.svg" class="home-android1" />
+              <span class="home-caption7">Download for Android</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-footer">
+        <div class="footer-content">
+          <div class="footer-information">
+            <div class="footer-heading">
+              <img alt="pastedImage" src="public/playground_assets/pastedimage-qqc.svg" class="footer-pasted-image" />
+              <span class="footer-text">
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </span>
+              </span>
+            </div>
+            <div class="footer-socials">
+              <div class="social-social social-root-class-name">
+                <img alt="pastedImage" src="public/playground_assets/pastedimage-9nha.svg" class="social-insider" />
+              </div>
+              <div class="social-social social-root-class-name1">
+                <img alt="pastedImage" src="public/playground_assets/pastedimage-k0l6.svg" class="social-insider" />
+              </div>
+              <div class="social-social social-root-class-name2">
+                <img alt="pastedImage" src="public/playground_assets/pastedimage-ld65.svg" class="social-insider" />
+              </div>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <span class="footer-header"><span>Solutions</span></span>
+              <span class="footer-link">
+                <span>Responsive Web Design</span>
+              </span>
+              <span class="footer-link01">
+                <span>Responsive Prototypes</span>
+              </span>
+              <span class="footer-link02"><span>Design to Code</span></span>
+              <span class="footer-link03">
+                <span>Static Website Builder</span>
+              </span>
+              <span class="footer-link04">
+                <span>Static Website Generator</span>
+              </span>
+            </div>
+            <div class="footer-column1">
+              <span class="footer-header1"><span>Company</span></span>
+              <span class="footer-link05"><span>About</span></span>
+              <span class="footer-link06"><span>Team</span></span>
+              <span class="footer-link07"><span>News</span></span>
+              <span class="footer-link08"><span>Partners</span></span>
+              <span class="footer-link09"><span>Careers</span></span>
+              <span class="footer-link10">
+                <span>Press &amp; Media</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <span class="footer-text1">
+          <span>© 2022 finbest. All Rights Reserved.</span>
+        </span>
+      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
