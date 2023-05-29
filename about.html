@@ -174,21 +174,21 @@
                         <div class="navbar-desktop">
                             <div class="navbar-main">
                                 <div class="navbar-branding">
-                                    <a href="index.html" class="navbar-navlink">
+                                    <a href="index.html?src=nav-desktop" class="navbar-navlink">
                                         <img alt="OMMO" src="public/playground_assets/pastedimage-cx4wqj.svg"
                                             class="navbar-finbest" />
                                     </a>
                                 </div>
                                 <div class="navbar-links">
-                                    <a href="index.html#features" class="link"><span>Fitur</span></a>
-                                    <a href="index.html#pricing" class="link"><span>Harga</span></a>
-                                    <a href="about.html" class="link"><span>Tentang Kami</span></a>
-                                    <a href="index.html" class="link"><span>Hubungi</span></a>
+                                    <a href="index.html#features?src=nav-desktop" class="link"><span>Fitur</span></a>
+                                    <a href="index.html#pricing?src=nav-desktop" class="link"><span>Harga</span></a>
+                                    <a href="about.html?src=nav-desktop" class="link"><span>Tentang Kami</span></a>
+                                    <a href="index.html?src=nav-desktop" class="link"><span>Hubungi</span></a>
                                 </div>
                             </div>
                             <div class="navbar-quick-actions">
                                 <!-- <a href="index.html" class="link navbar-log-in">Login</a> -->
-                                <a href="registration.html" class="navbar-navlink1">
+                                <a href="registration.html?src=nav-desktop" class="navbar-navlink1">
                                     <div class="navbar-sign-up-btn">
                                         <span class="navbar-sign-up">Daftar</span>
                                     </div>
@@ -199,7 +199,7 @@
                         </div>
                         <div id="mobile-menu" class="navbar-mobile">
                             <div class="navbar-top">
-                                <a href="index.html" class="navbar-navlink">
+                                <a href="index.html?src=nav-mobile" class="navbar-navlink">
                                     <img alt="OMMO" src="public/playground_assets/pastedimage-cx4wqj.svg"
                                         class="navbar-image" />
                                 </a>
@@ -217,19 +217,19 @@
                                 <a href="index.html#pricing" class="navbar-navlink3">
                                     <span>Harga</span>
                                 </a>
-                                <a href="about.html" class="navbar-navlink4">
+                                <a href="about.html?src=nav-mobile" class="navbar-navlink4">
                                     <span>Tentang Kami</span>
                                 </a>
-                                <a href="index.html" class="navbar-navlink5">
+                                <a href="index.html?src=nav-mobile" class="navbar-navlink5">
                                     <span>Hubungi</span>
                                 </a>
                                 <div class="navbar-buttons">
                                     <!-- <a href="index.html" class="navbar-navlink6">
-                      <div class="navbar-btn">
-                        <span class="navbar-text"><span>Login</span></span>
-                      </div>
-                    </a> -->
-                                    <a href="registration.html" class="navbar-navlink7">
+                <div class="navbar-btn">
+                  <span class="navbar-text"><span>Login</span></span>
+                </div>
+              </a> -->
+                                    <a href="registration.html?src=nav-mobile" class="navbar-navlink7">
                                         <div class="navbar-btn1">
                                             <span class="navbar-text1"><span>Daftar</span></span>
                                         </div>
@@ -253,22 +253,22 @@
     const navBar = document.querySelector('.navbar-links1');
 
     if (mobileMenu &amp;&amp; closeButton &amp;&amp; openButton) {
-      // On openButton click, set the mobileMenu position left to -100vw
-      openButton.addEventListener('click', function () {
-        mobileMenu.style.transform = 'translateX(0%)';
-      });
+    // On openButton click, set the mobileMenu position left to -100vw
+    openButton.addEventListener('click', function () {
+    mobileMenu.style.transform = 'translateX(0%)';
+    });
 
-      // On closeButton click, set the mobileMenu position to 0vw
-      closeButton.addEventListener('click', function () {
-        mobileMenu.style.transform = 'translateX(100%)';
-      });
+    // On closeButton click, set the mobileMenu position to 0vw
+    closeButton.addEventListener('click', function () {
+    mobileMenu.style.transform = 'translateX(100%)';
+    });
 
-      // On navBar click, set the mobileMenu position to 0vw
-      navBar.addEventListener('click', function () {
-        mobileMenu.style.transform = 'translateX(100%)';
-      });
+    // On navBar click, set the mobileMenu position to 0vw
+    navBar.addEventListener('click', function () {
+    mobileMenu.style.transform = 'translateX(100%)';
+    });
     }
-  </script>"></dangerous-html>
+    </script>"></dangerous-html>
                         </div>
                     </nav>
                 </div>
@@ -357,27 +357,25 @@
             </div>
             <div class="home-get-started1">
                 <div class="home-content09">
-                    <div class="home-heading14">
-                        <h2 class="home-text77">Get started with finbest now!</h2>
-                        <span class="home-text78">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore magna.
-                        </span>
+                  <div class="home-heading14">
+                    <h2 class="home-text77">Coba OMMO sekarang!</h2>
+                    <!-- <span class="home-text78">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod tempor incididunt ut labore magna.
+                    </span> -->
+                  </div>
+                  <div class="home-hero-buttons1">
+                    <div class="home-io-btn1">
+                      <img alt="pastedImage" src="public/playground_assets/whatsapp-white.svg" class="home-apple1" />
+                      <span class="home-caption6">Kontak kami</span>
                     </div>
-                    <div class="home-hero-buttons1">
-                        <div class="home-io-btn1">
-                            <img alt="pastedImage" src="public/playground_assets/pastedimage-zmzg.svg"
-                                class="home-apple1" />
-                            <span class="home-caption6">Download for iOS</span>
-                        </div>
-                        <div class="home-android-btn1">
-                            <img alt="pastedImage" src="public/playground_assets/pastedimage-ld65.svg"
-                                class="home-android1" />
-                            <span class="home-caption7">Download for Android</span>
-                        </div>
-                    </div>
+                    <!-- <div class="home-android-btn1">
+                      <img alt="pastedImage" src="public/playground_assets/pastedimage-ld65.svg" class="home-android1" />
+                      <span class="home-caption7">Download for Android</span>
+                    </div> -->
+                  </div>
                 </div>
-            </div>
+              </div>
             <div class="footer-footer">
                 <div class="footer-content">
                     <div class="footer-information">
@@ -421,10 +419,10 @@
                     </div> -->
                         <div class="footer-column1">
                             <span class="footer-header1"><span>Perusahaan</span></span>
-                            <a href="about.html">
+                            <a href="about.html?src=footer">
                                 <span class="footer-link05"><span>Tentang OMMO</span></span>
                             </a>
-                            <a href="about.html#team">
+                            <a href="about.html#team?src=footer">
                                 <span class="footer-link06"><span>Tim</span></span>
                             </a>
                             <!-- <span class="footer-link07"><span>News</span></span>
