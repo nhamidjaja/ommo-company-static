@@ -1590,7 +1590,7 @@ span.profile-card-name {
   flex-direction: row;
   background-size: contain;
   justify-content: flex-end;
-  background-image: url("public/playground_assets/ommo-app-home_waifu2x_art_noise1_scale.webp");
+  background-image: url("public/playground_assets/ommo-app-home.webp");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1751,7 +1751,7 @@ span.profile-card-name {
   flex-direction: row;
   background-size: cover;
   justify-content: flex-end;
-  background-image: url("public/playground_assets/ommo-app-mitra-detail_waifu2x_art_noise1_scale.webp");
+  background-image: url("public/playground_assets/ommo-app-mitra-detail.webp");
   background-repeat: no-repeat;
   background-position: center;
 }
