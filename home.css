@@ -1794,7 +1794,7 @@ span.profile-card-name {
   flex-direction: row;
   background-size: cover;
   justify-content: center;
-  background-image: url("public/playground_assets/meditation-relax.jpg");
+  background-image: url("public/playground_assets/meditation-relax.webp");
 }
 
 .home-content05 {
