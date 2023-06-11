@@ -1770,14 +1770,14 @@ span.profile-card-name {
 
 .home-image2 {
   width: 400px;
-  height: 590px;
+  height: 650px;
   display: flex;
   position: relative;
   align-items: center;
   flex-direction: row;
   background-size: cover;
   justify-content: center;
-  background-image: url("public/playground_assets/group%201281.svg");
+  background-image: url("public/playground_assets/ommo-app-payment-transfer-detail.webp");
   background-repeat: no-repeat;
   background-position: center;
 }
