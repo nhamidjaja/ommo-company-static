@@ -1770,14 +1770,14 @@ span.profile-card-name {
 
 .home-image2 {
   width: 400px;
-  height: 590px;
+  height: 650px;
   display: flex;
   position: relative;
   align-items: center;
   flex-direction: row;
   background-size: cover;
   justify-content: center;
-  background-image: url("public/playground_assets/group%201281.svg");
+  background-image: url("public/playground_assets/ommo-app-payment-transfer-detail.webp");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1849,14 +1849,14 @@ span.profile-card-name {
   padding-bottom: var(--dl-space-space-fiveunits);
   background-size: cover;
   justify-content: center;
-  background-image: url("public/playground_assets/mask%20group.svg");
+  /* background-image: url("public/playground_assets/mask%20group.svg"); */
 }
 
 .home-text14 {
   color: rgb(193, 255, 252);
   width: 100%;
   font-size: 40px;
-  max-width: 490px;
+  /* max-width: 490px; */
   font-style: normal;
   font-family: Poppins;
   font-weight: 600;
@@ -1883,8 +1883,8 @@ span.profile-card-name {
 
 .home-text15 {
   color: #ffffff;
-  width: 100%;
-  max-width: 490px;
+  /* width: 100%; */
+  /* max-width: 490px; */
   font-style: normal;
   font-weight: 500;
 }
@@ -3826,7 +3826,7 @@ span.profile-card-name {
   }
 
   .home-banner {
-    height: 520px;
+    /* height: 520px; */
     position: relative;
   }
 
@@ -3834,11 +3834,11 @@ span.profile-card-name {
     gap: var(--dl-space-space-oneandhalfunits);
     flex: 1;
     z-index: 50;
-    padding-top: var(--dl-space-space-threeunits);
+    /* padding-top: var(--dl-space-space-threeunits); */
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
     flex-direction: column;
-    padding-bottom: var(--dl-space-space-threeunits);
+    /* padding-bottom: var(--dl-space-space-threeunits); */
     justify-content: flex-start;
     background-image: none;
   }
