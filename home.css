@@ -1849,14 +1849,14 @@ span.profile-card-name {
   padding-bottom: var(--dl-space-space-fiveunits);
   background-size: cover;
   justify-content: center;
-  background-image: url("public/playground_assets/mask%20group.svg");
+  /* background-image: url("public/playground_assets/mask%20group.svg"); */
 }
 
 .home-text14 {
   color: rgb(193, 255, 252);
   width: 100%;
   font-size: 40px;
-  max-width: 490px;
+  /* max-width: 490px; */
   font-style: normal;
   font-family: Poppins;
   font-weight: 600;
