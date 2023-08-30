@@ -2226,6 +2226,7 @@ span.profile-card-name {
   font-family: Poppins;
   font-weight: 600;
   line-height: 40px;
+  text-decoration: line-through;
 }
 
 .home-text28 {
@@ -2716,6 +2717,7 @@ span.profile-card-name {
   font-family: Poppins;
   font-weight: 600;
   line-height: 40px;
+  text-decoration: line-through;
 }
 
 .home-text50 {
